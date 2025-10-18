@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixBooth - Photo Booth Remaja</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>💖 PixBooth</h1>
+    <p>Photo Booth Lucu & Estetik untuk Remaja!</p>
+  </header>
+
+  <main>
+    <div class="camera-container">
+      <div class="frame">
+        <video id="camera" autoplay playsinline></video>
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button id="startBtn">🎥 Nyalakan Kamera</button>
+      <button id="captureBtn" disabled>📸 Ambil Foto</button>
+      <button id="filterBtn" disabled>🎨 Ganti Filter</button>
+      <button id="stickerBtn" disabled>💫 Tambah Stiker</button>
+      <button id="frameBtn" disabled>🖼️ Ganti Bingkai</button>
+      <button id="downloadBtn" disabled>💾 Download Foto</button>
+    </div>
+
+    <div class="photo-result">
+      <h3>📷 Hasil Foto Kamu:</h3>
+      <img id="photo" src="" alt="Hasil Foto Kamu" />
+    </div>
+  </main>
+
+  <footer>
+    <p>Made with 💕 by Callista</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
